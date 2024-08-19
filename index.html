@@ -34,8 +34,37 @@
       <img src="./assets/images/background.jpg" alt="background image" />
     </div>
     <section class="main">
+      <!-- small device menu  -->
+      <div class="hambuger-menu">
+        <i class="bi bi-list" id="open-btn"></i>
+        <i class="bi bi-x" id="close-btn"></i>
+
+        <div class="menu-items">
+          <a href="#recent" class="nav-item"> Recent Items </a>
+          <a href="#popular" class="nav-item"> Most Popular </a>
+          <a href="#desserts" class="nav-item"> Desserts </a>
+          <a href="#drinks" class="nav-item"> Drinks </a>
+        </div>
+
+        <div
+          class="justify-content-center align-items-center gap-1 user-section"
+        >
+          <div class="img-wrapper">
+            <img src="./assets/images/male.png" alt="profile-pic" />
+          </div>
+          <div class="user-info d-flex flex-column mx-2">
+            <span class="user-name">John Doe</span>
+            <span class="role">Waiter</span>
+          </div>
+          <button class="btn btn-light">
+            <i class="bi bi-box-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- small device menu  -->
+
       <div class="content">
-        <section class="sidebar d-flex flex-column justify-content-between">
+        <section class="d-flex flex-column justify-content-between sidebar">
           <div>
             <h1 class="head-2">Menu</h1>
             <hr />
@@ -72,7 +101,7 @@
 
           <div class="dishes">
             <div class="row">
-              <div class="col-sm-6 dishes-section" id="recent">
+              <div class="col-sm-6 mb-3 dishes-section" id="recent">
                 <h2>Recent</h2>
                 <div class="dish-wrapper">
                   <div class="dish">
@@ -116,7 +145,7 @@
               </div>
             </div>
 
-            <div class="row mt-5" id="desserts">
+            <div class="row mt-3" id="desserts">
               <div class="dishes-section">
                 <h2>Desserts</h2>
                 <div class="dish-wrapper">
@@ -139,7 +168,7 @@
                 </div>
               </div>
             </div>
-            <div class="row mt-5" id="drinks">
+            <div class="row mt-3" id="drinks">
               <div class="dishes-section">
                 <h2>Drinks</h2>
                 <div class="dish-wrapper">
@@ -163,4 +192,6 @@
       </div>
     </section>
   </body>
+
+  <script src="./index.js"></script>
 </html>
