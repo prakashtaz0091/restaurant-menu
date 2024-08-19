@@ -289,11 +289,19 @@ body {
             justify-content: space-between;
             align-items: center;
 
+            -webkit-touch-callout: none; /* Prevent callout on iOS */
+            -webkit-user-select: none; /* Prevent text selection */
+            -khtml-user-select: none; /* Prevent text selection */
+            -moz-user-select: none; /* Prevent text selection */
+            -ms-user-select: none; /* Prevent text selection */
+            user-select: none; /* Prevent text selection */
+
             h5 {
               margin: 6px 0;
               padding: 3px 6px;
               font-size: 0.8rem;
               font-weight: 600;
+              cursor: pointer;
             }
           }
           .dish:hover {
